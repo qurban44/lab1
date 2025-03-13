@@ -1,0 +1,14 @@
+import numpy as np
+
+a_v = np.arange(2, 4.5, 0.5)
+b_v = np.arange(1, 2.1, 0.1)
+
+for a in a_v:
+    for b in b_v:
+        condition = b**2 - 2*a**2
+        if condition <= 2.5:
+            z = 7*a**2 + b
+        else:
+            z = 3*b - a
+
+        print(a,b,z)
