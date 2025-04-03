@@ -1,0 +1,11 @@
+import math
+s=(1/3)**0.2073*math.sin(4)-(35/19)*math.cos(math.radians(1))
+t=(math.tan(2)*t)*math.exp(-4)
+if s<=t:
+  m=math.sqrt(3*s*t)
+else:
+  m=s+t
+print(f"s = {s}")
+print(f"t = {t}")
+print(f"m = {m}")
+
