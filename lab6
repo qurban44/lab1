@@ -1,0 +1,30 @@
+def modify_matrix(A):
+    n = len(A)  
+
+    for i in range(n):
+        row_sum = 0  
+        for j in range(n):
+            if A[i][j] % 3 == 0:  
+                row_sum += A[i][j]
+
+        A[i][i] = row_sum
+    
+    return A
+
+def print_matrix(A):
+    for row in A:
+        print(' '.join(map(str, row)))
+
+
+A = [
+    [3, 6, 2],
+    [9, 5, 3],
+    [4, 12, 18]
+]
+
+
+modified_matrix = modify_matrix(A)
+
+
+print("Dəyişdirilmiş matrisi çap edirik:")
+print_matrix(modified_matrix)
