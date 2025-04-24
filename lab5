@@ -1,0 +1,10 @@
+def sum_before_first_negative(A):
+    total_sum = 0 
+    for num in A:
+        if num < 0:  
+            break 
+        total_sum += num  
+    return total_sum
+A = [3, 5, 8, -4, 2, 7]
+result = sum_before_first_negative(A)
+print("Birinci mənfi elementdən əvvəlki elementlərin cəmi:", result)
